@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+    <!-- Add instructor field to existing view -->
+    <record model="ir.ui.view" id="view_res_partner_form_mc">
+      <field name="name">partner.mc</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form" />
+      <field name="arch" type="xml">
+        <field name="website" position="after">
+          <field name="municipio_id" string="Ruta Municipio" />
+          <field name="departamento_id" string="Ruta Departamento" />
+        </field></field>
+      
+      
+      </record>
+    </data>
+  </openerp>
